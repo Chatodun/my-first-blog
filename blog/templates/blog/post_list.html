@@ -6,15 +6,21 @@
         <div>
             <h1><a href="/">My Blog</a></h1>
         </div>
+		  {% for post in posts %}
+    		<div>
+        		<p>published: {{ post.published_date }}</p>
+        		<h1><a href="">{{ post.title }}</a></h1>
+        		<p>{{ post.text|linebreaksbr }}</p>
+    		</div>
+    		 <div>
+            	<h2><a href="">My first post</a></h2>
+            	<p>С Днём Рождения, Мээрим!!!</p>
+        	</div>
+		  {% endfor %}
+        
 
         <div>
-            <p>published: 08.03.2018, 14:34</p>
-            <h2><a href="">My first post</a></h2>
-            <p>С Днём Рождения, Мээрим!!!</p>
-        </div>
-
-        <div>
-            <p>published: 08.03.2018, 14:36</p>
+            
             <h2><a href="">My second post</a></h2>
             <p>И с 8-м марта!</p>
         </div>
